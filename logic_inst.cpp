@@ -1,3 +1,25 @@
+ /**
+ * @file logic_inst.cpp
+ * 
+ * Truth table for a seven-segment display
+ * Assume we use a 4-bit binary number to represent input digits 0 to 9. 
+ * The input signals are represented by D3, D2, D1, and D0. 
+ * These signals determine the on/off state of each segment (A to G), 
+ * forming a truth table that describes the input-output relationship:
+ * 
+ * D3  D2  D1  D0  A  B  C  D  E  F  G
+ * 0   0   0   0   1  1  1  1  1  1  0
+ * 0   0   0   1   0  1  1  0  0  0  0
+ * 0   0   1   0   1  1  0  1  1  0  1
+ * 0   0   1   1   1  1  1  1  0  0  1
+ * 0   1   0   0   0  1  1  0  0  1  1
+ * 0   1   0   1   1  0  1  1  0  1  1
+ * 0   1   1   0   1  0  1  1  1  1  1
+ * 0   1   1   1   1  1  1  0  0  0  0
+ * 1   0   0   0   1  1  1  1  1  1  1
+ * 1   0   0   1   1  1  1  1  0  1  1
+ */
+
 #include "logic_inst.h"
 #include "logic.h"
 
